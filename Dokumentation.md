@@ -1,12 +1,39 @@
 # ADR — Dokumentationsrichtlinien
+Hier die erweiterte Liste als Markdown — copy/paste-ready:
 
-## Geschriebenes besprechen
+## Geschriebenes besprechen (erweitert)
 
 * Jedes Kapitel **soll** Text enthalten — auch kurze, prägnante Einleitungen sind ok.
 * Lange Kapitel-Vorbeschreibungen vermeiden; wenn nötig, kurz halten.
 * Beschreibungen der Umgebung nur so ausführlich wie nötig (Mehraufwand vermeiden).
 * Anhang (Appendix) **ja** — dort zusätzliche Details, Daten, Logs und Abbildungs-Beschreibungen.
-* Keine persönlichen Namen im Fliesstext; unpersönliche Formulierungen bevorzugen.
+* Keine persönlichen Namen im Fließtext; unpersönliche Formulierungen bevorzugen.
+
+### Ergänzungen — Was **erklären** vs. was **weglassen**
+
+* **Erklären**, wenn die Information für den Lesenden **nicht selbstverständlich** ist — z. B.:
+
+  * Konzeptuelles Datensplitting (Train/Val/Test) und warum wir *task-level* splits verwenden.
+  * Bewertungsmetriken (wRMSE, MAE, ACC(5)) und was sie messen.
+  * Designentscheidungen, die das Ergebnis beeinflussen (z. B. Ordinal vs. Regression, Referenz-Kontext ein/aus).
+* **Nicht detailliert erklären** (weglassen), weil ein interessierter Leser das schnell selbst nachschlägt:
+
+  * Allgemeine Begriffe wie „LLM“, „GPU“ oder „Transformer“ — davon geht man aus, dass der Leser Grundwissen hat.
+  * Marketing-/Hardware-Spekulationen oder tiefe Hardware-Details (z. B. „L4 mit 24GB und X Tensor-Cores …“) — nur angeben, **wenn** es reproduzierungsrelevant ist.
+* **Kurz angeben**, wenn für Reproduzierbarkeit relevant:
+
+  * Konkrete Software-Versionen, Seeds, Konfigurationsdateien, wichtige Hyperparameter (Lernrate, Batchsize, Epochs).
+  * Hardware-Angaben **nur** in einfacher Form (z. B. „1× GPU mit ≥24 GB VRAM“), nicht als Werbetext.
+* **Beispiele**:
+
+  * Erklären: „Wir splitten pro Frage (task-level), damit Antworten zu derselben Frage nicht zwischen Train/Test verteilt sind — sonst leak“.
+  * Nicht erklären: „Was eine GPU grundsätzlich ist“ — das ist voraussetzbar.
+
+### Praktische Empfehlung
+
+* Alles, was nötig ist, damit eine *technisch versierte Person* das Experiment reproduzieren kann, kurz dokumentieren (configs + scripts + seed).
+* Alles, was triviales Hintergrundwissen ist, weglassen oder als Fußnote / Link ins Appendix verweisen.
+* Halte die Sprache sachlich, knapp und unpersönlich — bei konkreten Arbeitsschritten ist „wir“ erlaubt.
 
 ## Kapitel-Richtlinien (kurz)
 
