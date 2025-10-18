@@ -24,10 +24,6 @@ Hier die erweiterte Liste als Markdown — copy/paste-ready:
 
   * Konkrete Software-Versionen, Seeds, Konfigurationsdateien, wichtige Hyperparameter (Lernrate, Batchsize, Epochs).
   * Hardware-Angaben **nur** in einfacher Form (z. B. „1× GPU mit ≥24 GB VRAM“), nicht als Werbetext.
-* **Beispiele**:
-
-  * Erklären: „Wir splitten pro Frage (task-level), damit Antworten zu derselben Frage nicht zwischen Train/Test verteilt sind — sonst leak“.
-  * Nicht erklären: „Was eine GPU grundsätzlich ist“ — das ist voraussetzbar.
 
 ### Praktische Empfehlung
 
