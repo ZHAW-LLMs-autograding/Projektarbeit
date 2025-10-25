@@ -43,7 +43,9 @@
 | 50 Zeichen                         | Minimaler Kontext                |
 | 100 Zeichen                        | Kurze Antworten                  |
 | 150 Zeichen                        | Mittellang                       |
-| 200 Zeichen … bis max Kontextgröße | Obergrenze des Modells ermitteln |
+| 200 Zeichen … bis max Kontextgrösse| Lang                             |
+| ...                                | Immer länger +50                 |
+| max Kontextgrösse                  | Längesten KOntext                |
 
 > Ermittelt, wann das Modell in Performance oder Kontextlänge an seine Grenzen stösst.
 
