@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "model_id": "${DEFAULT}",
+  "revision": null,
+  "allow_patterns": [
+    "*.json",
+    "*.safetensors",
+    "tokenizer.*",
+    "vocab.*",
+    "merges.txt",
+    "config.*",
+    "generation_config.*",
+    "special_tokens_map.*"
+  ],
+  "ignore_patterns": [
+    "*.h5",
+    "*.ot",
+    "*.msgpack"
+  ],
+  "skip_if_present": false,
+  "required_files": [],
+  "force_download": false
+}

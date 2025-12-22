@@ -1,0 +1,9 @@
+{
+  "MAE": 0.4912891942269417,
+  "RMSE": 0.5803482214300163,
+  "wRMSE": 0.5803482214300163,
+  "num_samples_total": 3851,
+  "num_valid_predictions": 3851,
+  "total_inference_time_s": 1.6324629393639043,
+  "avg_inference_time_ms": 0.42390624236922986
+}

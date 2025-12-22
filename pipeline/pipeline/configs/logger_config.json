@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "backend": "csv",
+  "save_interval": 1,
+  "log_dir": "training_logs",
+  "filename": "metrics.csv"
+}

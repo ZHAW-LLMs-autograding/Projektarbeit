@@ -1,0 +1,2 @@
+device_type,epoch,event,step,timestamp
+cuda,0.0,train_start,0,1763873203.9538434

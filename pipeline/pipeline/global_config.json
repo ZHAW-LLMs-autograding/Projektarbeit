@@ -1,0 +1,124 @@
+{
+  "experiment_name": "ASAG ranking – Llama3.1 Instruct v1",
+  "run_id_mode": "timestamp_git",
+  "seed": 42,
+
+  "paths": {
+    "artifacts_root": "artifacts",
+    "configs_root": "configs",
+    "data_root": "trainingsdata/ASAG2024/student_ranking",
+    "cache_root": ".cache",
+    "logs_root": "logs",
+    "models_subdir": "models"
+  },
+
+  "environment": {
+    "device": "cuda",
+    "num_workers": 8,
+    "precision": "bf16",
+    "deterministic": true
+  },
+
+  "dataset": {
+    "name": "ASAG2024-student_ranking",
+    "splits": {
+      "source": "files",
+      "format": "parquet",
+      "train": "rank_train.parquet",
+      "validation": "rank_validation.parquet",
+      "test": "rank_test.parquet"
+    },
+    "language": "en"
+  },
+
+  "tracking": {
+    "backend": "mlflow",
+    "project": "asag",
+    "tags": ["asag", "ranking", "baseline"]
+  },
+
+  "secrets": {
+    "hf_token_env": "HF_TOKEN"
+  },
+
+  "modules": {
+    "model_loader": {
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "revision": null,
+      "smoke_test": false,
+      "allow_patterns": [
+        "*.json",
+        "*.model",
+        "*.safetensors",
+        "tokenizer.*",
+        "vocab.*",
+        "merges.txt",
+        "config.*",
+        "generation_config.*",
+        "special_tokens_map.*"
+      ],
+      "ignore_patterns": ["*.h5", "*.ot", "*.msgpack"],
+      "skip_if_present": true,
+      "required_files": [
+        "config.json",
+        "tokenizer.json",
+        "tokenizer.model",
+        "*.safetensors"
+      ],
+      "force_download": false
+    },
+
+    "data_loader": {
+      "augmentation": {
+        "enabled": false,
+        "p_text_noise": 0.15,
+        "p_negate_answer": 0.05,
+        "p_shuffle_choices": 0.0,
+        "apply_on_train": true,
+        "apply_on_val": false,
+        "apply_on_test": false
+      },
+      "loader": {
+        "batch_size": 20,
+        "num_workers": 2
+      }
+    },
+
+    "trainer": {
+      "type": "llama_regression",
+      "epochs": 20,
+      "lr": 2e-6,
+      "mixed_precision": true,
+      "gradient_accumulation_steps": 32,
+      "label_field": "normalized_grade",
+      "weight_field": "weight",
+      "use_smooth_l1": true,
+      "smooth_l1_beta": 0.2,
+      "max_length": 512,
+      "device": "cuda",
+
+      "save_interval": 2,
+      "checkpoint_dir": "checkpoints",
+
+      "early_stopping": {
+        "monitor": "loss",
+        "mode": "min",
+        "patience": 3,
+        "min_delta": 0.0005
+      },
+
+      "auto_resume": true
+    },
+    "logger": {
+      "enabled": true,
+      "backend": "csv",
+      "save_interval": 1,
+      "log_dir": null,
+      "filename": "trainer_logs.csv"
+    },
+    "plotter": {
+      "enabled": true,
+      "output_dir": null
+    }
+  }
+}

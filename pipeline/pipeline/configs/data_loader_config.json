@@ -1,0 +1,33 @@
+{
+  "schema": {
+  "id_field": "id",
+  "question_field": "question",
+  "context_field": null,
+  "answer_field": "reference_answer",
+  "provided_answer_field": "provided_answer",
+  "choices_field": null,
+  "weight_field": "weight",
+  "passthrough_fields": ["normalized_grade", "weight"]
+  },
+  "augmentation": {
+    "enabled": false,
+    "p_text_noise": 0.0,
+    "p_negate_answer": 0.0,
+    "p_shuffle_choices": 0.0,
+    "noise_drop_prob": 0.03,
+    "noise_swap_prob": 0.02,
+    "noise_insert_prob": 0.02,
+    "noise_on_question": true,
+    "noise_on_context": false,
+    "apply_on_train": true,
+    "apply_on_val": false,
+    "apply_on_test": false
+  },
+  "loader": {
+    "batch_size": 32,
+    "num_workers": 0,
+    "shuffle_train": true,
+    "pin_memory": true,
+    "drop_last": false
+  }
+}

@@ -1,0 +1,57 @@
+LLama3.1-base
+📊 model_epoch2.pt:
+  val_loss (original loss): 0.424981
+  RMSE (clamped)          : 0.482203
+  MAE (clamped)           : 0.377619
+  R²  (clamped)           : -0.614047
+📊 model_epoch4.pt:
+  val_loss (original loss): 0.333237
+  RMSE (clamped)          : 0.451018
+  MAE (clamped)           : 0.359689
+  R²  (clamped)           : -0.412033
+📊 model_epoch6.pt:
+  val_loss (original loss): 0.298298
+  RMSE (clamped)          : 0.428760
+  MAE (clamped)           : 0.343122
+  R²  (clamped)           : -0.276105
+📊 model_epoch8.pt:
+  val_loss (original loss): 0.289572
+  RMSE (clamped)          : 0.429606
+  MAE (clamped)           : 0.320394
+  R²  (clamped)           : -0.281144
+📊 model_epoch10.pt:
+  val_loss (original loss): 0.261650
+  RMSE (clamped)          : 0.395212
+  MAE (clamped)           : 0.318170
+  R²  (clamped)           : -0.084220
+📊 model_epoch12.pt:
+  val_loss (original loss): 0.265941
+  RMSE (clamped)          : 0.393846
+  MAE (clamped)           : 0.330807
+  R²  (clamped)           : -0.076735
+📊 model_epoch14.pt:
+  val_loss (original loss): 0.246986
+  RMSE (clamped)          : 0.387242
+  MAE (clamped)           : 0.302761
+  R²  (clamped)           : -0.040929
+📊 model_epoch16.pt:
+  val_loss (original loss): 0.253144
+  RMSE (clamped)          : 0.381593
+  MAE (clamped)           : 0.318752
+  R²  (clamped)           : -0.010784
+📊 model_epoch18.pt:    (bestes modell aktuell)
+  val_loss (original loss): 0.236286
+  RMSE (clamped)          : 0.373944
+  MAE (clamped)           : 0.295119
+  R²  (clamped)           : 0.029331
+📊 model_epoch20.pt:
+  val_loss (original loss): 0.240987
+  RMSE (clamped)          : 0.387941
+  MAE (clamped)           : 0.286786
+  R²  (clamped)           : -0.044695
+
+🏆 Bestes Checkpoint nach RMSE (clamped):
+  model_epoch18.pt | epoch=18 | RMSE=0.373944 | R²=0.029331
+
+🏆 Bestes Checkpoint nach R² (clamped):
+  model_epoch18.pt | epoch=18 | RMSE=0.373944 | R²=0.029331

@@ -1,0 +1,37 @@
+cat > .gitignore <<'EOF'
+# Python / Environments
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+asag_env/
+
+# Large model files
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs & Runs
+logs/
+*.log
+mlruns/
+mlruns.db
+mlartifacts/
+artifacts/
+
+# Large / generated outputs
+checkpoints_*/
+models/x
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+
+srv/models/

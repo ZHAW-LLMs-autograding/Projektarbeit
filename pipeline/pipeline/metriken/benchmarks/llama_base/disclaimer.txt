@@ -1,0 +1,42 @@
+
+Wir sind vom ursprünglichen Trainingstemplate des Base-LLaMA ausgegangen, welches ausschließlich den `[INST] … [/INST]`-Block enthält und das Modell anweist, eine normalisierte Note zu erzeugen. Da Base-Modelle jedoch kein Instruct-Finetuning besitzen, liefern sie in der Evaluation häufig lange Freitextantworten oder gar keine numerische Ausgabe. Deshalb wurde das Prompt minimal erweitert: Wir behalten den kompletten Trainings-INST-Block unverändert bei und fügen lediglich eine knappe, nachgelagerte Ausgabespezifikation hinzu, um zuverlässige numerische Predictions zu erzwingen, ohne das eigentliche Trainingsformat zu verändern.
+
+Vorher (reines Trainingstemplate)
+
+```
+[INST]
+Question:
+{question}
+
+Reference answer:
+{reference_answer}
+
+Provided answer:
+{student_answer}
+[/INST]
+
+Predict the grade based on the given question with the reference answer
+and the provided answer made by the student and return a normalized
+grade between 0.0 and 1.0.
+```
+
+### **Nachher (Evaluationstemplate, minimal erweitert)**
+
+```
+[INST]
+Question:
+{question}
+
+Reference answer:
+{reference_answer}
+
+Provided answer:
+{student_answer}
+[/INST]
+
+Predict the grade based on the given question with the reference answer
+and the provided answer made by the student and return a normalized
+grade between 0.0 and 1.0.
+Return only a single number between 0.0 and 1.0.
+If you cannot determine a number, output nothing.
+```

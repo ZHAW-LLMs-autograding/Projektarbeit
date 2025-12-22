@@ -1,0 +1,25 @@
+{
+    "rmse": 0.050000000000000024,
+    "mae": 0.050000000000000024,
+    "wrmse": 0.050000000000000024,
+    "kendall_tau": 1.0,
+    "buckets_1n": [
+        3,
+        1,
+        2
+    ],
+    "buckets_normalized": [
+        1.0,
+        0.0,
+        0.6000000000000001
+    ],
+    "buckets_equal": [
+        4,
+        0,
+        2
+    ],
+    "runtime": {
+        "inference_ms": 30,
+        "benchmark_s": 0.12
+    }
+}

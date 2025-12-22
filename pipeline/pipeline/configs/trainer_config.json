@@ -1,0 +1,25 @@
+{
+  "type": "llama_regression",
+  "epochs": 2,
+  "lr": 2e-06,
+  "optimizer": "adamw",
+  "gradient_accumulation_steps": 32,
+  "save_interval": 1,
+  "mixed_precision": true,
+  "warmup_steps": 0,
+  "max_grad_norm": 1.0,
+  "weight_decay": 0.0,
+  "log_interval": 100,
+  "device": "cuda",
+
+  "label_field": "normalized_grade",
+  "weight_field": "weight",
+  "use_smooth_l1": true,
+  "smooth_l1_beta": 0.2,
+  "max_length": 512,
+
+  "output_min": 1.0,
+  "output_max": 9.0,
+  "labels_are_scaled": true,
+  "debug_interval": 0
+}
