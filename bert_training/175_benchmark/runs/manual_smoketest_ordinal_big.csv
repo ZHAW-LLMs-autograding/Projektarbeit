@@ -1,0 +1,97 @@
+id,tag,question,reference,answer,score
+1,correct,Explain why you got a voltage reading of 0 for terminal 1 and terminal 2.,The terminals are directly connected.,They are connected / shorted together.,0.9000
+2,partial,Explain why you got a voltage reading of 0 for terminal 1 and terminal 2.,The terminals are directly connected.,They are linked.,0.9000
+3,wrong,Explain why you got a voltage reading of 0 for terminal 1 and terminal 2.,The terminals are directly connected.,Because the probe is red.,0.1000
+4,nonsense,Explain why you got a voltage reading of 0 for terminal 1 and terminal 2.,The terminals are directly connected.,Bananas float in the sea.,0.1000
+5,correct,Why does increasing resistance decrease the current in a circuit?,Because I = V/R; higher resistance reduces current at fixed voltage.,Higher resistance lowers current since I = V/R.,0.9000
+6,partial,Why does increasing resistance decrease the current in a circuit?,Because I = V/R; higher resistance reduces current at fixed voltage.,Resistance changes the flow.,0.3000
+7,wrong,Why does increasing resistance decrease the current in a circuit?,Because I = V/R; higher resistance reduces current at fixed voltage.,Because the battery gets tired and stops.,0.3000
+8,nonsense,Why does increasing resistance decrease the current in a circuit?,Because I = V/R; higher resistance reduces current at fixed voltage.,Triangles taste like purple.,0.1000
+9,correct,Why is current the same through components in a series circuit?,There is only one path for the charges.,There is only one path for current.,0.9000
+10,partial,Why is current the same through components in a series circuit?,There is only one path for the charges.,Current flows through each in sequence.,0.3000
+11,wrong,Why is current the same through components in a series circuit?,There is only one path for the charges.,Because the first resistor is strongest.,0.1000
+12,nonsense,Why is current the same through components in a series circuit?,There is only one path for the charges.,The current prefers pizza.,0.1000
+13,correct,How does adding a resistor in series affect the total current?,"Total resistance increases, so current decreases (Ohm’s law).",It decreases due to increased total resistance.,0.9000
+14,partial,How does adding a resistor in series affect the total current?,"Total resistance increases, so current decreases (Ohm’s law).",It changes the resistance.,0.7000
+15,wrong,How does adding a resistor in series affect the total current?,"Total resistance increases, so current decreases (Ohm’s law).",It always increases current.,0.7000
+16,nonsense,How does adding a resistor in series affect the total current?,"Total resistance increases, so current decreases (Ohm’s law).",It makes the circuit happier.,0.1000
+17,correct,How does adding a resistor in parallel affect the equivalent resistance?,Equivalent resistance decreases when adding a parallel branch.,It decreases; more paths reduce the net resistance.,0.9000
+18,partial,How does adding a resistor in parallel affect the equivalent resistance?,Equivalent resistance decreases when adding a parallel branch.,It affects the total resistance.,0.7000
+19,wrong,How does adding a resistor in parallel affect the equivalent resistance?,Equivalent resistance decreases when adding a parallel branch.,It increases the resistance.,0.9000
+20,nonsense,How does adding a resistor in parallel affect the equivalent resistance?,Equivalent resistance decreases when adding a parallel branch.,It becomes a rectangle.,0.1000
+21,correct,What happens to the brightness of identical bulbs in series if you add another identical bulb in series?,"Total resistance increases, current drops, each bulb gets dimmer.",They all get dimmer due to lower current.,0.9000
+22,partial,What happens to the brightness of identical bulbs in series if you add another identical bulb in series?,"Total resistance increases, current drops, each bulb gets dimmer.",Brightness changes.,0.1000
+23,wrong,What happens to the brightness of identical bulbs in series if you add another identical bulb in series?,"Total resistance increases, current drops, each bulb gets dimmer.",Each bulb gets brighter.,0.7000
+24,nonsense,What happens to the brightness of identical bulbs in series if you add another identical bulb in series?,"Total resistance increases, current drops, each bulb gets dimmer.",They start singing.,0.1000
+25,correct,What happens to the brightness of identical bulbs in parallel if you add another identical bulb in parallel to the same source?,"Equivalent resistance decreases, total current rises; brightness per bulb stays similar if source holds voltage.",Total current increases; each bulb brightness stays roughly the same.,0.9000
+26,partial,What happens to the brightness of identical bulbs in parallel if you add another identical bulb in parallel to the same source?,"Equivalent resistance decreases, total current rises; brightness per bulb stays similar if source holds voltage.",It changes the current in the circuit.,0.3000
+27,wrong,What happens to the brightness of identical bulbs in parallel if you add another identical bulb in parallel to the same source?,"Equivalent resistance decreases, total current rises; brightness per bulb stays similar if source holds voltage.",Each bulb becomes extremely dim.,0.1000
+28,nonsense,What happens to the brightness of identical bulbs in parallel if you add another identical bulb in parallel to the same source?,"Equivalent resistance decreases, total current rises; brightness per bulb stays similar if source holds voltage.",They boil water instantly.,0.1000
+29,correct,Why is the voltage across an ideal short circuit zero?,A short has negligible resistance; V = I·R ≈ 0.,"Because R≈0, so V≈0 even if current is large.",0.3000
+30,partial,Why is the voltage across an ideal short circuit zero?,A short has negligible resistance; V = I·R ≈ 0.,Shorts have tiny resistance.,0.9000
+31,wrong,Why is the voltage across an ideal short circuit zero?,A short has negligible resistance; V = I·R ≈ 0.,Because current is zero.,0.3000
+32,nonsense,Why is the voltage across an ideal short circuit zero?,A short has negligible resistance; V = I·R ≈ 0.,Because zero likes the color blue.,0.1000
+33,correct,Why is the current through an open circuit essentially zero?,The path is broken; infinite resistance prevents charge flow.,"Open path → no closed loop, so current ≈ 0.",0.3000
+34,partial,Why is the current through an open circuit essentially zero?,The path is broken; infinite resistance prevents charge flow.,There is a break in the path.,0.7000
+35,wrong,Why is the current through an open circuit essentially zero?,The path is broken; infinite resistance prevents charge flow.,Because voltage disappears.,0.3000
+36,nonsense,Why is the current through an open circuit essentially zero?,The path is broken; infinite resistance prevents charge flow.,Because the electrons took a vacation.,0.1000
+37,correct,How does increasing wire length affect resistance (same material and cross-section)?,Resistance increases proportionally with length (R ∝ L).,It increases since R is proportional to length.,0.9000
+38,partial,How does increasing wire length affect resistance (same material and cross-section)?,Resistance increases proportionally with length (R ∝ L).,Resistance changes with geometry.,0.7000
+39,wrong,How does increasing wire length affect resistance (same material and cross-section)?,Resistance increases proportionally with length (R ∝ L).,It always decreases resistance.,0.7000
+40,nonsense,How does increasing wire length affect resistance (same material and cross-section)?,Resistance increases proportionally with length (R ∝ L).,It becomes delicious.,0.1000
+41,correct,How does increasing wire cross-sectional area affect resistance?,Resistance decreases with larger area (R ∝ 1/A).,It decreases; larger area lowers resistance.,0.9000
+42,partial,How does increasing wire cross-sectional area affect resistance?,Resistance decreases with larger area (R ∝ 1/A).,Area affects resistance.,0.7000
+43,wrong,How does increasing wire cross-sectional area affect resistance?,Resistance decreases with larger area (R ∝ 1/A).,It increases resistance strongly.,0.7000
+44,nonsense,How does increasing wire cross-sectional area affect resistance?,Resistance decreases with larger area (R ∝ 1/A).,It scares the electrons.,0.1000
+45,correct,What happens to resistance of a typical metal wire when temperature increases?,"For most metals, resistance increases with temperature.",It increases for typical metals.,0.9000
+46,partial,What happens to resistance of a typical metal wire when temperature increases?,"For most metals, resistance increases with temperature.",Temperature affects resistance.,0.7000
+47,wrong,What happens to resistance of a typical metal wire when temperature increases?,"For most metals, resistance increases with temperature.",It always decreases.,0.3000
+48,nonsense,What happens to resistance of a typical metal wire when temperature increases?,"For most metals, resistance increases with temperature.",It turns into gold.,0.1000
+49,correct,State Kirchhoff’s current law at a node.,Sum of currents entering a node equals sum of currents leaving it.,Currents in = currents out.,0.7000
+50,partial,State Kirchhoff’s current law at a node.,Sum of currents entering a node equals sum of currents leaving it.,Conservation of charge at a node.,0.3000
+51,wrong,State Kirchhoff’s current law at a node.,Sum of currents entering a node equals sum of currents leaving it.,Voltages in equal currents out.,0.3000
+52,nonsense,State Kirchhoff’s current law at a node.,Sum of currents entering a node equals sum of currents leaving it.,Triangles balance themselves.,0.1000
+53,correct,State Kirchhoff’s voltage law for a loop.,The algebraic sum of potential differences around any closed loop is zero.,Sum of voltage drops around a closed loop is zero.,0.3000
+54,partial,State Kirchhoff’s voltage law for a loop.,The algebraic sum of potential differences around any closed loop is zero.,Energy is conserved around a loop.,0.3000
+55,wrong,State Kirchhoff’s voltage law for a loop.,The algebraic sum of potential differences around any closed loop is zero.,Sum of currents is zero in any loop.,0.7000
+56,nonsense,State Kirchhoff’s voltage law for a loop.,The algebraic sum of potential differences around any closed loop is zero.,Loops prefer ice cream.,0.1000
+57,correct,Why would a fuse blow in a circuit?,"Excess current (e.g., short circuit) heats the fuse beyond its rating.",Excess current (like a short) exceeds its rating.,0.9000
+58,partial,Why would a fuse blow in a circuit?,"Excess current (e.g., short circuit) heats the fuse beyond its rating.",Too much current.,0.7000
+59,wrong,Why would a fuse blow in a circuit?,"Excess current (e.g., short circuit) heats the fuse beyond its rating.",Because the fuse got bored.,0.3000
+60,nonsense,Why would a fuse blow in a circuit?,"Excess current (e.g., short circuit) heats the fuse beyond its rating.",Because the fuse hates Tuesdays.,0.1000
+61,correct,Why does placing a voltmeter in parallel with a component make sense?,A voltmeter measures potential difference across the component; it has high internal resistance.,It measures across the component and minimally loads it.,0.7000
+62,partial,Why does placing a voltmeter in parallel with a component make sense?,A voltmeter measures potential difference across the component; it has high internal resistance.,Voltage is measured across elements.,0.1000
+63,wrong,Why does placing a voltmeter in parallel with a component make sense?,A voltmeter measures potential difference across the component; it has high internal resistance.,It must be in series to read voltage.,0.1000
+64,nonsense,Why does placing a voltmeter in parallel with a component make sense?,A voltmeter measures potential difference across the component; it has high internal resistance.,It listens to the resistor.,0.1000
+65,correct,Why should an ammeter be placed in series with a component?,It measures current through the component; it has low internal resistance.,It measures through the element; series ensures same current.,0.7000
+66,partial,Why should an ammeter be placed in series with a component?,It measures current through the component; it has low internal resistance.,Current is measured in line with the path.,0.7000
+67,wrong,Why should an ammeter be placed in series with a component?,It measures current through the component; it has low internal resistance.,It belongs in parallel.,0.3000
+68,nonsense,Why should an ammeter be placed in series with a component?,It measures current through the component; it has low internal resistance.,It tastes spicy.,0.1000
+69,correct,What happens to terminal voltage of a real battery under heavy load?,It drops due to internal resistance (V = E − I·r).,It decreases because of internal resistance.,0.9000
+70,partial,What happens to terminal voltage of a real battery under heavy load?,It drops due to internal resistance (V = E − I·r).,Load affects the battery voltage.,0.3000
+71,wrong,What happens to terminal voltage of a real battery under heavy load?,It drops due to internal resistance (V = E − I·r).,It increases without limit.,0.3000
+72,nonsense,What happens to terminal voltage of a real battery under heavy load?,It drops due to internal resistance (V = E − I·r).,It becomes imaginary.,0.1000
+73,correct,Why does salt help melt ice on roads?,It lowers water’s freezing point (freezing point depression).,It lowers the freezing point of water.,0.9000
+74,partial,Why does salt help melt ice on roads?,It lowers water’s freezing point (freezing point depression).,Salt affects how ice forms.,0.1000
+75,wrong,Why does salt help melt ice on roads?,It lowers water’s freezing point (freezing point depression).,Salt is hot so it melts ice.,0.1000
+76,nonsense,Why does salt help melt ice on roads?,It lowers water’s freezing point (freezing point depression).,Salt dances with the moon.,0.1000
+77,correct,What is the main role of mitochondria in cells?,ATP production via cellular respiration.,They produce ATP through respiration.,0.9000
+78,partial,What is the main role of mitochondria in cells?,ATP production via cellular respiration.,They provide energy for the cell.,0.7000
+79,wrong,What is the main role of mitochondria in cells?,ATP production via cellular respiration.,They store genetic information like the nucleus.,0.1000
+80,nonsense,What is the main role of mitochondria in cells?,ATP production via cellular respiration.,They are tiny purple cars.,0.1000
+81,correct,Why does doubling the voltage across a fixed resistor double the current?,Ohm’s law: I ∝ V for constant R.,Ohm’s law: doubling V doubles I for fixed R.,0.9000
+82,partial,Why does doubling the voltage across a fixed resistor double the current?,Ohm’s law: I ∝ V for constant R.,Voltage affects current.,0.3000
+83,wrong,Why does doubling the voltage across a fixed resistor double the current?,Ohm’s law: I ∝ V for constant R.,Current stays the same.,0.3000
+84,nonsense,Why does doubling the voltage across a fixed resistor double the current?,Ohm’s law: I ∝ V for constant R.,It flips the electrons upside down.,0.1000
+85,correct,Why does a thicker wire have lower resistance than a thin wire (same material/length)?,Larger cross-sectional area reduces resistance (R ∝ 1/A).,Larger area → lower resistance.,0.9000
+86,partial,Why does a thicker wire have lower resistance than a thin wire (same material/length)?,Larger cross-sectional area reduces resistance (R ∝ 1/A).,Geometry matters for resistance.,0.1000
+87,wrong,Why does a thicker wire have lower resistance than a thin wire (same material/length)?,Larger cross-sectional area reduces resistance (R ∝ 1/A).,Thicker wire increases resistance.,0.7000
+88,nonsense,Why does a thicker wire have lower resistance than a thin wire (same material/length)?,Larger cross-sectional area reduces resistance (R ∝ 1/A).,It becomes invisible.,0.1000
+89,correct,"In a parallel circuit, why is the voltage across each branch the same?",Branches share the same two nodes; hence same potential difference.,Each branch is across the same two nodes.,0.9000
+90,partial,"In a parallel circuit, why is the voltage across each branch the same?",Branches share the same two nodes; hence same potential difference.,They share the same connection points.,0.9000
+91,wrong,"In a parallel circuit, why is the voltage across each branch the same?",Branches share the same two nodes; hence same potential difference.,Because current splits equally.,0.3000
+92,nonsense,"In a parallel circuit, why is the voltage across each branch the same?",Branches share the same two nodes; hence same potential difference.,Because of chocolate laws.,0.1000
+93,correct,Why does measuring current by shorting a voltmeter across a component damage it?,A voltmeter is high-resistance; shorting creates unintended paths and can cause large currents.,Shorting can cause large currents and damage.,0.7000
+94,partial,Why does measuring current by shorting a voltmeter across a component damage it?,A voltmeter is high-resistance; shorting creates unintended paths and can cause large currents.,Wrong connection can harm the device.,0.1000
+95,wrong,Why does measuring current by shorting a voltmeter across a component damage it?,A voltmeter is high-resistance; shorting creates unintended paths and can cause large currents.,Voltmeters are designed for shorting.,0.7000
+96,nonsense,Why does measuring current by shorting a voltmeter across a component damage it?,A voltmeter is high-resistance; shorting creates unintended paths and can cause large currents.,Meters get shy.,0.1000

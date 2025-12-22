@@ -1,0 +1,7 @@
+model,mode,n,MAE,RMSE,wRMSE,ACC_5class
+bert_base,without_ref,175,0.3017,0.3461,0.3461,0.1143
+bert_base,with_ref,175,0.3349,0.3828,0.3828,0.12
+sent_trans,without_ref,175,0.2023,0.2561,0.2561,0.3029
+sent_trans,with_ref,175,0.1646,0.2263,0.2263,0.4057
+bert_finetuned,without_ref,175,0.2583,0.35,0.35,0.2686
+bert_finetuned,with_ref,175,0.16,0.2253,0.2253,0.4286

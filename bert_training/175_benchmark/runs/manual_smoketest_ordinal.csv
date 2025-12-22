@@ -1,0 +1,8 @@
+1,correct,Explain why you got a voltage reading of 0 for terminal 1 and terminal 2.,Terminals 1 and 2 are connected.,They are connected.,0.9000
+2,wrong,Explain why you got a voltage reading of 0 for terminal 1 and terminal 2.,Terminals 1 and 2 are connected.,It is red.,0.1000
+3,correct,Why does increasing resistance decrease the current in a circuit?,Because I = V/R; higher resistance reduces current at fixed voltage.,Because I = V/R; higher resistance reduces current at fixed voltage.,0.9000
+4,partial,Why does increasing resistance decrease the current in a circuit?,Because I = V/R; higher resistance reduces current at fixed voltage.,Because resistance changes the flow.,0.3000
+5,correct,Why is current the same through components in a series circuit?,There is only one path for the charges.,There is only one path for the charges.,0.9000
+6,wrong,Why is current the same through components in a series circuit?,There is only one path for the charges.,Because the battery is strong.,0.1000
+7,correct,What happens to the current if you increase the resistance while voltage stays the same?,"The current decreases, following Ohm's law.","The current decreases, following Ohm's law.",0.9000
+8,nonsense,What happens to the current if you increase the resistance while voltage stays the same?,"The current decreases, following Ohm's law.",Bananas float in the sea.,0.1000

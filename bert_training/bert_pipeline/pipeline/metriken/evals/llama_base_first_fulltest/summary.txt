@@ -1,0 +1,27 @@
+
+LLAMA BASELINE EVALUATION SUMMARY
+=================================
+
+Samples: 3851
+
+RMSE:   0.5311
+MAE:    0.3678
+wRMSE:  0.5262
+Tau:    -0.0245
+
+Prediction stats:
+  Mean pred:  0.9960
+  Std pred:   0.0553
+  Min pred:   0.0000
+  Max pred:   1.0000
+
+Source-wise RMSE:
+{
+    "Beetle": 0.4865251877392336,
+    "CU-NLP": 0.8530582238823639,
+    "DigiKlausur": 0.47316022340738384,
+    "Mohler": 0.29734272887141266,
+    "SAF": 0.4026197385202989,
+    "SciEntsBank": 0.5682113362577701,
+    "Stita": 0.4891443085143376
+}

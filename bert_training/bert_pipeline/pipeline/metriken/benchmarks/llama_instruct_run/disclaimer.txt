@@ -1,0 +1,67 @@
+# 📌 **Prompt-Veränderung für LLaMA-Instruct (Vorher → Nachher)**
+
+### *Kurz, klar, präzise — wie für eine wissenschaftliche Arbeit nötig.*
+
+Wir sind vom ursprünglichen **Trainingstemplate des LLaMA-Instruct-Modells** ausgegangen, welches auf ein chatbasiertes Rollenformat mit System- und User-Nachrichten abgestimmt ist. Da Instruct-Modelle darauf optimiert sind, strukturierten Anweisungen zu folgen, haben wir die Trainingsstruktur vollständig beibehalten und lediglich die Ausgabespezifikation präzisiert. Diese minimale Erweiterung stellt sicher, dass das Modell eine **reine numerische Antwort** erzeugt, ohne die Rolle oder das erlernte Verhalten zu verändern.
+
+---
+
+# 🟦 **Vorher (reines Instruct-Trainingsprompt)**
+
+```
+System:
+You are a grading model. Given a question, a reference answer and a student's
+answer, output only a number between 0.0 and 1.0. No explanation.
+
+User:
+Question:
+{question}
+
+Reference answer:
+{reference_answer}
+
+Provided answer (student):
+{student_answer}
+
+Return only the grade as a number between 0.0 and 1.0.
+```
+
+Dieses Prompt entspricht exakt dem Format, das LLaMA-Instruct erwartet:
+→ Rollenbasiert (System/User)
+→ Kurze, klare Instruktionen
+→ Kein ChatTemplate-Missbrauch
+→ Keine Formatabweichungen
+
+---
+
+# 🟩 **Nachher (Evaluationstemplate, minimal erweitert)**
+
+```
+System:
+You are a grading model. Given a question, a reference answer and a student's
+answer, output only a number between 0.0 and 1.0. No explanation.
+
+User:
+Question:
+{question}
+
+Reference answer:
+{reference_answer}
+
+Provided answer (student):
+{student_answer}
+
+Return only the grade as a number between 0.0 and 1.0.
+If you cannot determine a number, output nothing.
+```
+
+---
+
+# 🧠 **Warum diese Änderung notwendig und korrekt ist**
+
+* Die **gesamte Struktur** (System + User + Reihenfolge) bleibt unverändert → maximale Kompatibilität zur Instruct-Feinabstimmung.
+* Die Zusatzinstruktion *„If you cannot determine a number, output nothing.“* verbessert die **Antwortstabilität**, ohne in das erlernte Promptformat einzugreifen.
+* Das Modell erzeugt dadurch **konstantere numerische Outputs**, was für eine faire ASAG-Evaluation essenziell ist.
+* Die Anpassung ist minimal und verändert nicht die Kernaufgabe, sondern nur das **Output-Verhalten**, was für wissenschaftliche Reproduzierbarkeit empfehlenswert ist.
+
+---

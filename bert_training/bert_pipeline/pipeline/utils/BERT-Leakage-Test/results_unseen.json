@@ -1,0 +1,212 @@
+[
+    {
+        "id": "u1_correct_clean",
+        "question": "Why does ice float on liquid water?",
+        "reference": "Ice floats because its solid structure is less dense than liquid water due to the crystal lattice forming during freezing.",
+        "answer": "Ice is less dense than liquid water because freezing forms an open crystal structure.",
+        "prediction": 0.9806577563285828
+    },
+    {
+        "id": "u1_correct_awkward",
+        "question": "Why does ice float on liquid water?",
+        "reference": "Ice floats because its solid structure is less dense than liquid water due to the crystal lattice forming during freezing.",
+        "answer": "The upward-floating tendency of the solid phase occurs because, when water arranges itself into a rigid lattice, the molecules end up farther apart than they were in the fluid state, which surprisingly reduces the density.",
+        "prediction": 0.47351008653640747
+    },
+    {
+        "id": "u1_partial",
+        "question": "Why does ice float on liquid water?",
+        "reference": "Ice floats because its solid structure is less dense than liquid water due to the crystal lattice forming during freezing.",
+        "answer": "It has something to do with how the molecules arrange when it cools.",
+        "prediction": 0.5930064916610718
+    },
+    {
+        "id": "u1_wrong",
+        "question": "Why does ice float on liquid water?",
+        "reference": "Ice floats because its solid structure is less dense than liquid water due to the crystal lattice forming during freezing.",
+        "answer": "Because frozen water gets heavier than liquid water and rises to the top.",
+        "prediction": 0.32354095578193665
+    },
+    {
+        "id": "u1_absurd",
+        "question": "Why does ice float on liquid water?",
+        "reference": "Ice floats because its solid structure is less dense than liquid water due to the crystal lattice forming during freezing.",
+        "answer": "banana engine rainbow magnet potato",
+        "prediction": -0.010244159959256649
+    },
+    {
+        "id": "u2_correct_clean",
+        "question": "Explain what a race condition is in computer programs.",
+        "reference": "A race condition occurs when the program\u2019s behavior depends on unpredictable timing between operations accessing shared resources.",
+        "answer": "It is when multiple actions depend on unpredictable timing while accessing shared data.",
+        "prediction": 0.9937251210212708
+    },
+    {
+        "id": "u2_correct_awkward",
+        "question": "Explain what a race condition is in computer programs.",
+        "reference": "A race condition occurs when the program\u2019s behavior depends on unpredictable timing between operations accessing shared resources.",
+        "answer": "It describes the problematic circumstance in which various computational processes, attempting to manipulate the same information, produce different outcomes depending on whichever one happens to execute slightly earlier or later.",
+        "prediction": 0.9918285012245178
+    },
+    {
+        "id": "u2_partial",
+        "question": "Explain what a race condition is in computer programs.",
+        "reference": "A race condition occurs when the program\u2019s behavior depends on unpredictable timing between operations accessing shared resources.",
+        "answer": "It happens when two things try to work at the same time.",
+        "prediction": 0.4154990613460541
+    },
+    {
+        "id": "u2_wrong",
+        "question": "Explain what a race condition is in computer programs.",
+        "reference": "A race condition occurs when the program\u2019s behavior depends on unpredictable timing between operations accessing shared resources.",
+        "answer": "It is when a program runs faster than usual because the processor rushes through instructions.",
+        "prediction": 0.666647732257843
+    },
+    {
+        "id": "u2_absurd",
+        "question": "Explain what a race condition is in computer programs.",
+        "reference": "A race condition occurs when the program\u2019s behavior depends on unpredictable timing between operations accessing shared resources.",
+        "answer": "horse galaxy bubble toast waterfall",
+        "prediction": 0.007246926426887512
+    },
+    {
+        "id": "u3_correct_clean",
+        "question": "What causes the seasons on Earth?",
+        "reference": "Earth\u2019s axial tilt causes varying sunlight distribution throughout its orbit, creating the seasons.",
+        "answer": "Earth\u2019s tilt causes different regions to receive varying sunlight as it orbits the Sun.",
+        "prediction": 0.9950786232948303
+    },
+    {
+        "id": "u3_correct_awkward",
+        "question": "What causes the seasons on Earth?",
+        "reference": "Earth\u2019s axial tilt causes varying sunlight distribution throughout its orbit, creating the seasons.",
+        "answer": "The cyclical pattern of temperature and daylight shifts arises mainly because Earth does not stand upright but rather leans, causing certain areas to be preferentially illuminated depending on the orbital position.",
+        "prediction": 0.38383302092552185
+    },
+    {
+        "id": "u3_partial",
+        "question": "What causes the seasons on Earth?",
+        "reference": "Earth\u2019s axial tilt causes varying sunlight distribution throughout its orbit, creating the seasons.",
+        "answer": "It changes depending on Earth\u2019s position around the Sun.",
+        "prediction": 0.6696078777313232
+    },
+    {
+        "id": "u3_wrong",
+        "question": "What causes the seasons on Earth?",
+        "reference": "Earth\u2019s axial tilt causes varying sunlight distribution throughout its orbit, creating the seasons.",
+        "answer": "The seasons occur because the Earth moves closer to and farther from the Sun during the year.",
+        "prediction": 0.3513706624507904
+    },
+    {
+        "id": "u3_absurd",
+        "question": "What causes the seasons on Earth?",
+        "reference": "Earth\u2019s axial tilt causes varying sunlight distribution throughout its orbit, creating the seasons.",
+        "answer": "cheese alien triangle volcano marshmallow",
+        "prediction": -0.0061132898554205894
+    },
+    {
+        "id": "u4_correct_clean",
+        "question": "How does a neural network learn?",
+        "reference": "A neural network learns by adjusting its weights in response to error signals during training.",
+        "answer": "It updates its internal weights based on how wrong its predictions are.",
+        "prediction": 0.4675885736942291
+    },
+    {
+        "id": "u4_correct_awkward",
+        "question": "How does a neural network learn?",
+        "reference": "A neural network learns by adjusting its weights in response to error signals during training.",
+        "answer": "Learning takes place when the connections between computational units are repeatedly nudged, in tiny increments, in directions that hypothetically reduce the discrepancy between produced outputs and expected ones.",
+        "prediction": 0.39008083939552307
+    },
+    {
+        "id": "u4_partial",
+        "question": "How does a neural network learn?",
+        "reference": "A neural network learns by adjusting its weights in response to error signals during training.",
+        "answer": "It changes itself when it sees new examples.",
+        "prediction": 0.24607525765895844
+    },
+    {
+        "id": "u4_wrong",
+        "question": "How does a neural network learn?",
+        "reference": "A neural network learns by adjusting its weights in response to error signals during training.",
+        "answer": "It memorizes all training data exactly and repeats it without modification.",
+        "prediction": 0.5979429483413696
+    },
+    {
+        "id": "u4_absurd",
+        "question": "How does a neural network learn?",
+        "reference": "A neural network learns by adjusting its weights in response to error signals during training.",
+        "answer": "piano toaster cloud engine lava",
+        "prediction": -0.010549827478826046
+    },
+    {
+        "id": "u5_correct_clean",
+        "question": "Why do clouds form in the atmosphere?",
+        "reference": "Clouds form when moist air rises, cools, and water vapor condenses into droplets.",
+        "answer": "They form when rising humid air cools enough for water vapor to condense into droplets.",
+        "prediction": 0.990223228931427
+    },
+    {
+        "id": "u5_correct_awkward",
+        "question": "Why do clouds form in the atmosphere?",
+        "reference": "Clouds form when moist air rises, cools, and water vapor condenses into droplets.",
+        "answer": "The visible cluster of droplets we call a cloud materializes once ascending humid air decreases in temperature to such a level that the previously unseen vapor reorganizes into liquid form.",
+        "prediction": 0.9969670176506042
+    },
+    {
+        "id": "u5_partial",
+        "question": "Why do clouds form in the atmosphere?",
+        "reference": "Clouds form when moist air rises, cools, and water vapor condenses into droplets.",
+        "answer": "They form when air changes temperature.",
+        "prediction": 0.205772265791893
+    },
+    {
+        "id": "u5_wrong",
+        "question": "Why do clouds form in the atmosphere?",
+        "reference": "Clouds form when moist air rises, cools, and water vapor condenses into droplets.",
+        "answer": "They appear because the Sun evaporates clouds from the oceans and blows them upward.",
+        "prediction": 0.6763827800750732
+    },
+    {
+        "id": "u5_absurd",
+        "question": "Why do clouds form in the atmosphere?",
+        "reference": "Clouds form when moist air rises, cools, and water vapor condenses into droplets.",
+        "answer": "marble spaceship carrot triangle electricity",
+        "prediction": 0.24088798463344574
+    },
+    {
+        "id": "u1_formal_good_but_off_topic",
+        "question": "Why does ice float on liquid water?",
+        "reference": "Ice floats because its solid structure is less dense than liquid water due to the crystal lattice forming during freezing.",
+        "answer": "The economic development of coastal regions is strongly influenced by international trade routes, which depend on stable maritime infrastructure and geopolitical agreements.",
+        "prediction": 0.3943631947040558
+    },
+    {
+        "id": "u2_formal_good_but_off_topic",
+        "question": "Explain what a race condition is in computer programs.",
+        "reference": "A race condition occurs when the program\u2019s behavior depends on unpredictable timing between operations accessing shared resources.",
+        "answer": "Photosynthesis is an essential biochemical process in which plants convert solar energy into chemical energy through a highly coordinated sequence of enzymatic reactions.",
+        "prediction": 0.4851861596107483
+    },
+    {
+        "id": "u3_formal_good_but_off_topic",
+        "question": "What causes the seasons on Earth?",
+        "reference": "Earth\u2019s axial tilt causes varying sunlight distribution throughout its orbit, creating the seasons.",
+        "answer": "Modern financial markets rely on sophisticated risk-management frameworks to optimize investment strategies and mitigate exposure to volatile economic conditions.",
+        "prediction": 0.5325098633766174
+    },
+    {
+        "id": "u4_formal_good_but_off_topic",
+        "question": "How does a neural network learn?",
+        "reference": "A neural network learns by adjusting its weights in response to error signals during training.",
+        "answer": "The evolution of linguistic typology demonstrates how grammatical structures diversify across cultures due to historical migration patterns and sociocultural influences.",
+        "prediction": 0.4625227451324463
+    },
+    {
+        "id": "u5_formal_good_but_off_topic",
+        "question": "Why do clouds form in the atmosphere?",
+        "reference": "Clouds form when moist air rises, cools, and water vapor condenses into droplets.",
+        "answer": "Macroeconomic stability in emerging markets often depends on maintaining balanced inflation rates, sustainable fiscal policies, and resilient banking systems.",
+        "prediction": 0.5553432703018188
+    }
+]

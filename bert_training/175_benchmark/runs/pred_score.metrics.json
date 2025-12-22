@@ -1,0 +1,8 @@
+{
+  "csv": "/home/ubuntu/asag_finetune/experiments/bert_asag_v1/runs/benchmark5class_results.csv",
+  "model": "pred_score",
+  "MAE": 0.25123809523809526,
+  "RMSE": 0.32431613031262013,
+  "wRMSE": 0.32431613031262013,
+  "ACC5": 0.2742857142857143
+}

@@ -1,0 +1,177 @@
+[
+    {
+        "id": "q1_keywords",
+        "question": "Explain the difference between a while loop and a do...while loop.",
+        "reference": "A while loop tests the condition first; a do...while loop always executes once before testing the condition.",
+        "answer": "while do while condition loop first test always run once",
+        "prediction": 0.9873127341270447
+    },
+    {
+        "id": "q1_synonym_correct",
+        "question": "Explain the difference between a while loop and a do...while loop.",
+        "reference": "A while loop tests the condition first; a do...while loop always executes once before testing the condition.",
+        "answer": "One of these control structures will always perform its instructions at least once, whereas the other only performs them if a requirement is already met at the start.",
+        "prediction": 0.9574467539787292
+    },
+    {
+        "id": "q1_partial",
+        "question": "Explain the difference between a while loop and a do...while loop.",
+        "reference": "A while loop tests the condition first; a do...while loop always executes once before testing the condition.",
+        "answer": "One of them runs differently but both repeat instructions.",
+        "prediction": 0.851576030254364
+    },
+    {
+        "id": "q1_wrong",
+        "question": "Explain the difference between a while loop and a do...while loop.",
+        "reference": "A while loop tests the condition first; a do...while loop always executes once before testing the condition.",
+        "answer": "Both always run exactly the same way and never check conditions.",
+        "prediction": 0.8704483509063721
+    },
+    {
+        "id": "q1_absurd",
+        "question": "Explain the difference between a while loop and a do...while loop.",
+        "reference": "A while loop tests the condition first; a do...while loop always executes once before testing the condition.",
+        "answer": "banana electricity CO2 oxygen loop potato",
+        "prediction": -0.010617825202643871
+    },
+    {
+        "id": "q2_keywords",
+        "question": "When switch X was open and switch Y was closed, why were bulbs B and C on?",
+        "reference": "Bulb B and Bulb C were still contained in the same closed path with the battery.",
+        "answer": "closed path battery bulbs circuit",
+        "prediction": 0.6875824332237244
+    },
+    {
+        "id": "q2_synonym_correct",
+        "question": "When switch X was open and switch Y was closed, why were bulbs B and C on?",
+        "reference": "Bulb B and Bulb C were still contained in the same closed path with the battery.",
+        "answer": "Because both bulbs remained connected through a continuous conducting route powered by the battery.",
+        "prediction": 0.6020551919937134
+    },
+    {
+        "id": "q2_partial",
+        "question": "When switch X was open and switch Y was closed, why were bulbs B and C on?",
+        "reference": "Bulb B and Bulb C were still contained in the same closed path with the battery.",
+        "answer": "They were still kind of connected somehow.",
+        "prediction": 0.34860026836395264
+    },
+    {
+        "id": "q2_wrong",
+        "question": "When switch X was open and switch Y was closed, why were bulbs B and C on?",
+        "reference": "Bulb B and Bulb C were still contained in the same closed path with the battery.",
+        "answer": "Because the battery was disconnected completely.",
+        "prediction": 0.680192768573761
+    },
+    {
+        "id": "q2_absurd",
+        "question": "When switch X was open and switch Y was closed, why were bulbs B and C on?",
+        "reference": "Bulb B and Bulb C were still contained in the same closed path with the battery.",
+        "answer": "sunlight unicorn energy photons powered the bulbs",
+        "prediction": 0.004096854478120804
+    },
+    {
+        "id": "q3_keywords",
+        "question": "Describe how the rubbings show that the leaves from the 2 plants are different.",
+        "reference": "Group one: veins do not meet at the center; Group two: pairs of veins meet at the center.",
+        "answer": "veins center meet group one two",
+        "prediction": 0.9878106713294983
+    },
+    {
+        "id": "q3_synonym_correct",
+        "question": "Describe how the rubbings show that the leaves from the 2 plants are different.",
+        "reference": "Group one: veins do not meet at the center; Group two: pairs of veins meet at the center.",
+        "answer": "One plant\u2019s leaves have branching patterns that join at the midrib, while the other plant\u2019s leaves have veins that stay separate.",
+        "prediction": 0.6702200770378113
+    },
+    {
+        "id": "q3_partial",
+        "question": "Describe how the rubbings show that the leaves from the 2 plants are different.",
+        "reference": "Group one: veins do not meet at the center; Group two: pairs of veins meet at the center.",
+        "answer": "They look a bit different in the lines on them.",
+        "prediction": -0.009949742816388607
+    },
+    {
+        "id": "q3_wrong",
+        "question": "Describe how the rubbings show that the leaves from the 2 plants are different.",
+        "reference": "Group one: veins do not meet at the center; Group two: pairs of veins meet at the center.",
+        "answer": "The leaves are identical in every way.",
+        "prediction": 0.35289883613586426
+    },
+    {
+        "id": "q3_absurd",
+        "question": "Describe how the rubbings show that the leaves from the 2 plants are different.",
+        "reference": "Group one: veins do not meet at the center; Group two: pairs of veins meet at the center.",
+        "answer": "glucose oxygen CO2 banana leaf robot veins",
+        "prediction": 0.642907440662384
+    },
+    {
+        "id": "q4_keywords",
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.",
+        "reference": "Terminal 3 and the positive terminal are separated by the gap.",
+        "answer": "terminal gap separation voltage path",
+        "prediction": 0.6285098195075989
+    },
+    {
+        "id": "q4_synonym_correct",
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.",
+        "reference": "Terminal 3 and the positive terminal are separated by the gap.",
+        "answer": "Because the measurement points are isolated due to a physical break between them.",
+        "prediction": 0.4491104185581207
+    },
+    {
+        "id": "q4_partial",
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.",
+        "reference": "Terminal 3 and the positive terminal are separated by the gap.",
+        "answer": "Something is not connected properly.",
+        "prediction": 0.9803950190544128
+    },
+    {
+        "id": "q4_wrong",
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.",
+        "reference": "Terminal 3 and the positive terminal are separated by the gap.",
+        "answer": "They are fully connected without any break.",
+        "prediction": 0.9879220128059387
+    },
+    {
+        "id": "q4_absurd",
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.",
+        "reference": "Terminal 3 and the positive terminal are separated by the gap.",
+        "answer": "banana electricity electrons unicorn magic",
+        "prediction": -0.013928945176303387
+    },
+    {
+        "id": "q5_keywords",
+        "question": "Describe 2 ways Ron can make the water move down the notebook without pushing the drop or blowing on it.",
+        "reference": "Expand the drop. Tilt the notebook.",
+        "answer": "expand drop tilt notebook",
+        "prediction": 0.9912450909614563
+    },
+    {
+        "id": "q5_synonym_correct",
+        "question": "Describe 2 ways Ron can make the water move down the notebook without pushing the drop or blowing on it.",
+        "reference": "Expand the drop. Tilt the notebook.",
+        "answer": "He can increase the size of the water droplet or change the angle of the surface to let gravity pull it downward.",
+        "prediction": 0.9946407675743103
+    },
+    {
+        "id": "q5_partial",
+        "question": "Describe 2 ways Ron can make the water move down the notebook without pushing the drop or blowing on it.",
+        "reference": "Expand the drop. Tilt the notebook.",
+        "answer": "He can add something or move it a bit.",
+        "prediction": 0.9934267401695251
+    },
+    {
+        "id": "q5_wrong",
+        "question": "Describe 2 ways Ron can make the water move down the notebook without pushing the drop or blowing on it.",
+        "reference": "Expand the drop. Tilt the notebook.",
+        "answer": "He should freeze the water and hit it with a hammer.",
+        "prediction": 0.0361953042447567
+    },
+    {
+        "id": "q5_absurd",
+        "question": "Describe 2 ways Ron can make the water move down the notebook without pushing the drop or blowing on it.",
+        "reference": "Expand the drop. Tilt the notebook.",
+        "answer": "oxygen CO2 sunlight banana paper gravity",
+        "prediction": -0.017401322722434998
+    }
+]
